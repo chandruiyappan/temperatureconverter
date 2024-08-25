@@ -1,0 +1,70 @@
+/* src/styles/Options.css */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ebe4eb;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .input-field, .select-field, .convert-button {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .input-field {
+    font-size: 16px;
+  }
+  
+  .select-field {
+    font-size: 16px;
+    background: #ffffff;
+  }
+  
+  .convert-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .convert-button:hover {
+    background-color: #23d160;
+  }
+  
+  @media (max-width: 768px) {
+    .options-container {
+      padding: 15px;
+    }
+  
+    .input-field, .select-field, .convert-button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .options-container {
+      padding: 10px;
+    }
+  
+    .input-field, .select-field, .convert-button {
+      font-size: 12px;
+    }
+  }
+  

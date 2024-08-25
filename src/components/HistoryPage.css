@@ -1,0 +1,105 @@
+/* src/components/HistoryPage.css */
+.history-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  
+  .history-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .history-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .history-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .history-text {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+  }
+  
+  .remove-btn {
+    background: #ff6f6f;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .remove-btn:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.1);
+  }
+  
+  .remove-icon {
+    font-size: 1.4em;
+    margin: 0;
+  }
+  
+  .empty-message {
+    text-align: center;
+    font-size: 1.3em;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .history-card-container {
+      grid-template-columns: 1fr;
+    }
+    .remove-btn {
+      font-size: 1.4em;
+      padding: 4px 6px;
+    }
+  }
+  
